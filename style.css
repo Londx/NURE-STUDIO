@@ -1,0 +1,669 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F7F4EE;
+    color:#111;
+    font-family:Arial, sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-family:Georgia,"Times New Roman",serif;
+    font-weight:400;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+span{
+    color:#C5A184;
+}
+
+/* HEADER */
+
+header{
+
+    width:100%;
+
+    padding:25px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    background:#F7F4EE;
+
+    border-bottom:1px solid #E3DDD3;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-family:Georgia;
+
+    font-size:42px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+.btn-menu{
+
+    border:1px solid #111;
+
+    padding:15px 22px;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    transition:.3s;
+
+}
+
+.btn-menu:hover{
+
+    background:#111;
+
+    color:white;
+
+}
+
+/* HERO */
+
+.hero{
+
+    min-height:100vh;
+
+    padding:180px 8% 100px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.tag{
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#8a8177;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1{
+
+    max-width:850px;
+
+    font-size:90px;
+
+    line-height:.95;
+
+}
+
+.hero p{
+
+    max-width:650px;
+
+    margin-top:35px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+.botoes{
+
+    margin-top:45px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.botoes a{
+
+    padding:18px 28px;
+
+    border:1px solid #111;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.botoes a:first-child{
+
+    background:#111;
+
+    color:white;
+
+}
+
+/* FAIXA */
+
+.faixa{
+
+    padding:28px;
+
+    border-top:1px solid #E3DDD3;
+
+    border-bottom:1px solid #E3DDD3;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    font-family:Georgia;
+
+    font-size:34px;
+
+    color:#666;
+
+}
+
+/* GERAL */
+
+section{
+
+    padding:110px 8%;
+
+    border-bottom:1px solid #E3DDD3;
+
+}
+
+.mini{
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#8a8177;
+
+    margin-bottom:35px;
+
+}
+
+/* SOBRE */
+
+.sobre h2{
+
+    max-width:900px;
+
+    font-size:60px;
+
+    line-height:1.1;
+
+}
+
+.link-texto{
+
+    margin-top:40px;
+
+    display:inline-block;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+/* SERVIÇOS */
+
+.topo-secao{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:70px;
+
+}
+
+.topo-secao h2{
+
+    font-size:58px;
+
+}
+
+.lista-servicos{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:50px;
+
+}
+
+.lista-servicos h3{
+
+    margin-top:20px;
+
+    font-size:52px;
+
+}
+
+.lista-servicos p{
+
+    margin-top:20px;
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+/* PROJETOS */
+
+.titulo-duplo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    margin-bottom:70px;
+
+}
+
+.titulo-duplo h2{
+
+    font-size:72px;
+
+}
+
+.titulo-duplo p{
+
+    max-width:350px;
+
+    color:#555;
+
+}
+
+.grid-projetos{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px;
+
+}
+
+.projeto{
+
+    display:block;
+
+    color:inherit;
+
+}
+
+.mockup{
+
+    height:320px;
+
+    border:1px solid #ddd;
+
+    padding:30px;
+
+    transition:.35s;
+
+}
+
+.mockup small{
+
+    opacity:.6;
+
+}
+
+.mockup h3{
+
+    margin-top:90px;
+
+    font-size:46px;
+
+    max-width:400px;
+
+}
+
+.projeto:hover .mockup{
+
+    transform:translateY(-10px);
+
+}
+
+.bege{
+
+    background:#DCCFB8;
+
+}
+
+.escuro{
+
+    background:#232323;
+
+    color:white;
+
+}
+
+.verde{
+
+    background:#A8B395;
+
+}
+
+.azul{
+
+    background:#112B49;
+
+    color:white;
+
+}
+
+.projeto h4{
+
+    margin-top:25px;
+
+    font-size:32px;
+
+}
+
+.projeto p{
+
+    margin-top:10px;
+
+    color:#666;
+
+}
+
+/* PROCESSO */
+
+.processo h2{
+
+    font-size:68px;
+
+    margin-bottom:70px;
+
+}
+
+.passos{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    border:1px solid #ddd;
+
+}
+
+.passos div{
+
+    padding:35px;
+
+    border-right:1px solid #ddd;
+
+}
+
+.passos div:last-child{
+
+    border-right:none;
+
+}
+
+.passos strong{
+
+    font-size:42px;
+
+    color:#C5A184;
+
+    font-family:Georgia;
+
+}
+
+.passos h3{
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
+
+/* DIFERENCIAIS */
+
+.diferenciais h2{
+
+    font-size:68px;
+
+    margin-bottom:60px;
+
+}
+
+.grid-diferenciais{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-diferenciais div{
+
+    padding:45px;
+
+    border:1px solid #ddd;
+
+}
+
+.grid-diferenciais h3{
+
+    margin-bottom:20px;
+
+}
+
+/* CONTATO */
+
+.contato{
+
+    background:#111;
+
+    color:white;
+
+}
+
+.contato h2{
+
+    font-size:92px;
+
+}
+
+.contato p{
+
+    margin-top:25px;
+
+    color:#d9d9d9;
+
+}
+
+.btn-final{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:18px 32px;
+
+    border:1px solid white;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:70px;
+
+    padding:80px 8%;
+
+}
+
+footer h3{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+footer h4{
+
+    margin-bottom:25px;
+
+}
+
+footer a{
+
+    display:block;
+
+    margin-bottom:18px;
+
+}
+
+.copy{
+
+    border-top:1px solid #ddd;
+
+    padding:30px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    nav{
+
+        display:none;
+
+    }
+
+    .hero h1{
+
+        font-size:55px;
+
+    }
+
+    .faixa{
+
+        font-size:22px;
+
+    }
+
+    .lista-servicos,
+
+    .grid-projetos,
+
+    .passos,
+
+    .grid-diferenciais,
+
+    footer{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .titulo-duplo{
+
+        flex-direction:column;
+
+        gap:30px;
+
+    }
+
+    .contato h2{
+
+        font-size:56px;
+
+    }
+
+}
